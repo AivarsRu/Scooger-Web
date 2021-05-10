@@ -1,0 +1,18 @@
+{% extends "scgScoogers/scgLayout.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block head_title %}{% trans "Profile" %}{% endblock %}
+
+{% block body %}
+
+<div class="mainPicture" style="background-image: url({% static "images/Scooters_temporatry_main.jpg" %});">
+    <div class="textover">
+        <div class="textcenter">    
+            <h1>{% trans "User profile" %}</h1>
+        </div>
+    </div>
+  </div>
+
+{% endblock %}

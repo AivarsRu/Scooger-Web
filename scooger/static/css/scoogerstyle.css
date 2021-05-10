@@ -1,0 +1,100 @@
+:root {
+  --lesla-green: rgb(1, 91, 118);
+  --lesla-red: ;
+}
+
+html {
+  margin: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+table {
+  border-collapse: collapse; /* lai neveidotos dubultās borderes tabulā */
+}
+
+tr {
+  padding-bottom: 10px;
+  border-bottom: lightgrey 1px dashed;
+}
+
+h1 {
+  padding: 5px;
+  background-color: white;
+  font-size: medium;
+  color: var(--lesla-green);
+  font-size: x-large;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.imgcenter {
+  vertical-align: middle;
+  align-self: center;
+}
+
+.textcenter {
+  text-align: center !important;
+}
+
+.lesla-item:hover {
+  border-bottom-color: var(--lesla-green);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.mainPicture {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+.textover {
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  background-color: white;
+  border: var(--lesla-green);
+  border-width: thin;
+  border-style: solid;
+  border-radius: 30px;
+  padding: 20px;
+  margin: auto;
+  width: 60%;
+  max-width: 500px;
+}
+
+.errorlist {
+  background-color: pink;
+  color: darkred;
+}
+
+.registryForm {
+}
+
+.btn-lesla {
+  background-color: white;
+  border-radius: 5px;
+  border-color: var(--lesla-green);
+  color: var(--lesla-green);
+}
+.btn-lesla:hover {
+  background-color: var(--lesla-green);
+  border-radius: 5px;
+  border-color: var(--lesla-green);
+  color: white;
+}

@@ -1,0 +1,35 @@
+{% extends "scgScoogers/scgLayout.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block head_title %}{% trans "Log Out" %}{% endblock %}
+
+{% block body %}
+<div class="mainPicture" style="background-image: url({% static "images/Scooters_temporatry_main.jpg" %});">
+  <div class="textover">
+      <div class="textcenter">    
+        <h1>{% trans "Sign Out" %}</h1>
+        <p class="alert alert-warning">{% trans 'Are you sure you want to log out?' %}</p>
+        <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <button class = "btn-lesla" type="submit">{% trans 'Sign Out' %}</button>
+        </form>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
